@@ -1,0 +1,93 @@
+@import "./components/variables.scss";
+@import "./components/responsive.scss";
+@import "./components/home.scss";
+@import './components/menu.scss';
+
+@font-face {
+  font-family: "Spartan-Extrabold";
+  src: url("../assets/fonts/Spartan-ExtraBold.ttf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan-Extrabold", sans-serif !important;
+}
+
+.responsive {
+  width: 1520px;
+  margin: 0 auto;
+}
+
+.main-page_layout {
+  .main_page_wrapper {
+    background: $homeBg;
+    padding: 53px 65px 53px 35px;
+    box-sizing: border-box;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.35),
+      inset 5px 5px 10px rgba(255, 255, 255, 0.35);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    .grapes{
+      position: absolute;
+      top: -142px;
+      left: -106px;
+    }
+
+    .main_orange{
+      position: absolute;
+      bottom: -148px;
+      right: 56px;
+    }
+
+    .barItem{
+      display: none;
+    }
+  }
+
+  .nav_container {
+    flex: 0 1 15%;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+
+  .home_section {
+    flex: 0 1 80%;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 55px ;
+    box-sizing: border-box;
+    background: $bgWhite;
+    border-radius: 35px;
+  }
+
+  .menu-page{
+    flex: 0 1 80%;
+    padding: 50px 55px 24px 60px;
+    box-sizing: border-box;
+    background: $bgWhite;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (max-width: 1560px) and (min-width: 1060px) {
+  .responsive {
+    width: 1020px;
+  }
+}
+
+@media screen and (max-width: 1060px) and (min-width: 760px) {
+  .responsive {
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .responsive {
+    width: 300px;
+  }
+}

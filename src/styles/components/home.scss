@@ -1,0 +1,1137 @@
+// Nav Section Start
+.nav-section {
+  .navigation-container {
+
+    .close{
+      display: none;
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+
+      .logo-img_wrapper {
+        padding: 12px;
+        border-radius: 15px;
+        background: $bgWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-size: $smalSz;
+        line-height: $commonLh;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+
+    .navigation-wrapper {
+      margin-top: 52px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        column-gap: 42px;
+        border-radius: 15px;
+        transition: 0.12s linear;
+
+        &:hover {
+          background: $bgRed;
+
+          .menu-img_wrapper {
+            background: $bgRedDark;
+            color: $bgWhite;
+          }
+
+          h3 {
+            color: $bgWhite;
+          }
+        }
+
+        &.router-link-exact-active {
+          background: $bgRed;
+
+          .menu-img_wrapper {
+            background: $bgRedDark;
+            color: $bgWhite;
+          }
+
+          h3 {
+            color: $bgWhite;
+          }
+        }
+
+        .menu-img_wrapper {
+          width: 46px;
+          height: 44px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $bgWhite;
+          color: $borderCol;
+          transition: 0.12s linear;
+        }
+
+        h3 {
+          font-size: $smalSz;
+          line-height: $commonLh;
+          font-weight: 500;
+          margin: 0;
+          color: $borderCol;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .navbar_bottom {
+      position: relative;
+      height: 288px;
+      display: flex;
+      align-items: flex-end;
+
+      .mini-circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $bgWhite;
+        position: absolute;
+        top: 34px;
+        left: 25px;
+      }
+
+      .middle-circle {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $bgWhite;
+        position: absolute;
+        left: 38px;
+        top: 58px;
+      }
+
+      .purple-circle {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        background: $bgPurple;
+        position: absolute;
+        top: 36px;
+        left: 56px;
+
+        .white-circle {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: $bgWhite;
+          position: relative;
+          left: 14px;
+          top: 14px;
+        }
+      }
+
+      .blue-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: $bgBlue2;
+        position: absolute;
+        right: 44px;
+        top: 84px;
+        z-index: 1;
+      }
+
+      .deliver_man {
+        position: absolute;
+        bottom: 62px;
+        right: 22px;
+        z-index: 3;
+      }
+
+      .navbar_bottom_details {
+        width: 100%;
+        height: 162px;
+        background: $bgWhite;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        row-gap: 12px;
+        padding: 12px 25px;
+        box-sizing: border-box;
+        position: relative;
+
+        .red-circle {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: $bgRed;
+          position: absolute;
+          left: 20px;
+          top: 42px;
+        }
+
+        .detail_items {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-size: $miniSz;
+            line-height: $miniLh;
+            font-weight: 700;
+            margin: 0;
+          }
+
+          svg {
+            width: 32px;
+            height: 16px;
+            cursor: pointer;
+          }
+        }
+
+        h4 {
+          max-width: 55%;
+          font-size: $commonSz;
+          line-height: $mediumLh;
+          font-weight: 800;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Nav Section End
+
+// Home Header Start
+
+.header {
+  .header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    justify-content: space-between;
+
+    .header_left {
+      flex: 0 0 70%;
+      display: flex;
+      justify-content: space-between;
+
+      .header_title {
+        flex: 0 0 50%;
+
+        .header_title_details {
+          position: relative;
+
+          img {
+            position: absolute;
+            bottom: 0;
+            right: 36px;
+          }
+
+          h2 {
+            font-size: $extraSz;
+            line-height: $extraLh;
+            font-weight: 800;
+            margin: 0;
+            color: $textColorBl;
+          }
+        }
+      }
+
+      .header_search {
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        .search_details {
+          width: fit-content;
+          min-width: 50px;
+          height: 50px;
+          border-radius: 15px;
+          background: $bgGrey2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-right: 12px;
+          box-sizing: border-box;
+          display: flex;
+          column-gap: 8px;
+          cursor: pointer;
+
+          &.active {
+            padding-left: 8px;
+          }
+
+          input {
+            width: 0;
+            max-width: 150px;
+            overflow: hidden;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: all 0.12s linear;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid $bgGrey2;
+
+            &:focus {
+              outline: none;
+            }
+
+            &.active {
+              display: block;
+              width: fit-content;
+              transform: scaleX(1);
+            }
+          }
+
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+    .header_right {
+      flex: 0 0 25%;
+      display: flex;
+      justify-content: flex-end;
+
+      .header_cart {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        background: $bgGrey3;
+        color: $bgWhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 9;
+
+        &::after {
+          content: "";
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background: $bgRed;
+          position: absolute;
+          right: -2px;
+          top: -2px;
+        }
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
+// Home Header End
+
+// Banner Start
+
+.banner-section {
+  margin-top: 30px;
+
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 64px;
+
+    .slider {
+      flex: 0 0 70%;
+      max-width: 715px;
+    }
+
+    .advertising {
+      flex: 0 0 25%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.banner-slider {
+
+  .mobile-slider_wrapper{
+    display: none;
+  }
+
+  .slider_wrapper {
+    .swiper-container {
+      .swiper-slide {
+        width: 100px;
+        height: 160px;
+        border-radius: 60px;
+        background: $bgGrey2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.12s linear;
+        cursor: pointer;
+
+        &:hover {
+          background: $bgWhite;
+          box-shadow: 0px 4px 46px rgba(0, 0, 0, 0.1);
+
+          p {
+            color: $textColorBl !important;
+          }
+        }
+
+        p {
+          font-size: $commonSz;
+          line-height: $extraLh;
+          margin: 0;
+          color: $textColor2 !important;
+          font-weight: 500;
+          transition: 0.12s linear;
+        }
+
+        img {
+          height: calc(50% - 12px);
+        }
+      }
+    }
+  }
+}
+
+.banner-advertising {
+  background: $bgPurple2;
+  padding: 30px 22px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  .advertising-wrapper {
+    position: relative;
+
+    .apple {
+      position: absolute;
+      top: -112px;
+    }
+
+    .orange {
+      position: absolute;
+      top: -64px;
+      right: 72px;
+    }
+
+    .cheese {
+      position: absolute;
+      right: -72px;
+    }
+
+    .fire-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: $bgPink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -112px;
+      right: 82px;
+    }
+
+    .burger {
+      position: absolute;
+      top: -240px;
+      z-index: 1;
+    }
+
+    .advertising_details {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      h3 {
+        font-size: $mediumSz;
+        line-height: $tallLh;
+        font-weight: 700;
+        color: $bgWhite;
+        margin: 0;
+      }
+
+      p {
+        font-size: $smalSz;
+        line-height: $commonLh;
+        color: $bgWhite;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Banner End
+
+// Lucknow All Items Start
+
+.allItems-articles_section {
+  margin-top: 42px;
+
+  .allItems-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+
+    .items {
+      flex: 0 0 70%;
+    }
+
+    .articles {
+      flex: 0 0 25%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.lucknow-dishes_section {
+  .dishes-header {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+
+    h3 {
+      font-size: $mediumSz;
+      line-height: $tallLh;
+      font-weight: 800;
+      margin: 0;
+      color: $textColorBl;
+    }
+
+    img {
+      cursor: pointer;
+      position: relative;
+      z-index: 49;
+    }
+  }
+}
+
+.lucknow-items_wrapper {
+  .allDishes-container {
+    margin-top: 20px;
+
+    .dishes-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 30px;
+
+      .allItems {
+        flex: 0 0 30%;
+        height: 248px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+
+        .star-circle {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: rgba(255, 193, 7, 0.16);
+          position: absolute;
+          right: 0;
+          top: -24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .like-circle {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: rgba(255, 193, 7, 0.16);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          right: 0;
+          top: 24px;
+        }
+
+        .fire-circle {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: $bgPink;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: 0;
+          top: 16px;
+        }
+
+        &:nth-child(4),
+        &:nth-child(6) {
+          transform: translateY(12px);
+        }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          height: fit-content;
+
+          .item_details {
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+
+            h4,
+            p {
+              display: none;
+            }
+
+            .details-title {
+              display: none;
+            }
+          }
+        }
+
+        .item-image_wrapper {
+          position: absolute;
+          top: -36px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 16px;
+          box-sizing: border-box;
+        }
+
+        &:nth-child(2) {
+          margin-top: -18px;
+
+          .item-image_wrapper {
+            top: -16px;
+          }
+
+          .item_details {
+            padding: 42px 24px 12px 24px;
+            background: $bgGrey1;
+          }
+        }
+
+        .item_details {
+          padding: 56px 24px 12px 24px;
+          box-sizing: border-box;
+          border: 1px solid $bgGrey1;
+          border-radius: 30px;
+
+          h4 {
+            font-size: $miniSz;
+            line-height: $miniLh;
+            font-weight: 800;
+            color: $textColorBl;
+            margin: 0;
+            margin-bottom: 6px;
+          }
+
+          p {
+            font-size: $smSz;
+            line-height: $smallLh;
+            font-weight: 600;
+            color: $textColor3;
+          }
+
+          .details-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+              font-size: $smalSz;
+              line-height: $smallLh;
+              font-weight: 800;
+              color: $textColorBl;
+            }
+
+            .item-circle {
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background: $textColorBl;
+              color: $bgWhite;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lucknow-filter {
+    margin-top: 20px;
+
+    
+
+    .filter_wrapper {
+      position: relative;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 32px;
+
+      .filter-dropdown {
+        flex: 0 0 30%;
+      }
+
+      .filter-datepicker {
+        flex: 0 0 30%;
+      }
+
+      .filter-timepicker {
+        flex: 0 0 30%;
+      }
+
+
+      .filter_offer {
+        position: absolute;
+        top: 148px;
+        left: calc(55% - 24px);
+        .content {
+          position: relative;
+        }
+
+        .content h2 {
+          color: #fff;
+          font-size: 8em;
+          position: absolute;
+          transform: translate(-50%, -50%);
+        }
+
+        .content h2:nth-child(1) {
+          color: transparent;
+          -webkit-text-stroke: 4px $bgPurple2;
+        }
+
+        .content h2:nth-child(2) {
+          color: $bgPurple2;
+          animation: animate 4s ease-in-out infinite;
+        }
+
+        @keyframes animate {
+          0%,
+          100% {
+            clip-path: polygon(
+              0% 45%,
+              16% 44%,
+              33% 50%,
+              54% 60%,
+              70% 61%,
+              84% 59%,
+              100% 52%,
+              100% 100%,
+              0% 100%
+            );
+          }
+
+          50% {
+            clip-path: polygon(
+              0% 60%,
+              15% 65%,
+              34% 66%,
+              51% 62%,
+              67% 50%,
+              84% 45%,
+              100% 46%,
+              100% 100%,
+              0% 100%
+            );
+          }
+        }
+      }
+
+      
+
+      // Lucknow dropdown Start
+
+      .filter-dropdown {
+        .dropdown-container {
+          width: 100%;
+          height: 48px;
+          position: relative;
+
+          .dropdown-visible {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 6px 12px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            border: 1px solid $borderCol;
+            border-radius: 2px;
+            cursor: pointer;
+
+            p {
+              font-size: $commonSz;
+              line-height: $mediumLh;
+              font-weight: 500;
+              margin: 0;
+              color: $textColorBl;
+            }
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .dropdown-hidden {
+            position: absolute;
+            top: 56px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+            border: 1px solid $borderCol;
+            border-radius: 2px;
+            transition: 0.12s linear;
+            transform-origin: top;
+            background: $bgWhite;
+            z-index: 9;
+
+            &.active {
+              transform: scaleY(1);
+            }
+
+            &.deactive {
+              transform: scaleY(0);
+            }
+
+            .drop-items {
+              padding: 6px 12px;
+              box-sizing: border-box;
+              cursor: pointer;
+              transition: 0.12s linear;
+
+              span {
+                font-size: $commonSz;
+                line-height: $mediumLh;
+                font-weight: 500;
+                color: $textColorBl;
+                transition: 0.08s linear;
+              }
+
+              &:hover {
+                background: $bgGrey3;
+
+                span {
+                  color: $bgWhite;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Lucknow dropdown End
+
+      // Lucknow datepicker Start
+
+      .filter-datepicker {
+        .datepicker_container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .ant-calendar-picker-container {
+            top: 52px !important;
+
+            .ant-calendar-panel {
+              .ant-calendar-footer {
+                display: none;
+              }
+
+              .ant-calendar-date-panel {
+                .ant-calendar-body {
+                  .ant-calendar-tbody {
+                    .ant-calendar-selected-day {
+                      .ant-calendar-date {
+                        background: $bgBlue2;
+                        color: $textColorBl;
+                        font-weight: 800;
+                        border-color: $bgBlue2;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .ant-calendar-input-wrap {
+                height: 48px;
+
+                .ant-calendar-date-input-wrap {
+                  .ant-calendar-input {
+                    &::placeholder {
+                      font-size: $commonSz;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .ant-calendar-picker {
+            height: 100%;
+
+            div {
+              height: 100%;
+
+              .anticon {
+                color: $textColorBl;
+              }
+
+              .ant-input {
+                height: 100%;
+                border: 1px solid $borderCol;
+
+                &::placeholder {
+                  font-size: $commonSz;
+                  line-height: $mediumLh;
+                  color: $textColorBl;
+                  font-weight: 500;
+                }
+
+                &:hover {
+                  border-color: $bgBlue2;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Lucknow datepicker End
+
+      // Lucknow timepicker Start
+
+      .filter-timepicker {
+        .timepicker_container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+
+          .ant-time-picker-panel {
+            width: 100%;
+            top: 52px !important;
+            left: 8px !important;
+
+            .ant-time-picker-panel-input-wrap {
+              max-width: 100%;
+            }
+
+            .ant-time-picker-panel-combobox {
+              .ant-time-picker-panel-select {
+                width: 50%;
+
+                ul {
+                  width: 100%;
+
+                  li {
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+
+          .ant-time-picker {
+            width: 100%;
+            height: 100%;
+
+            .anticon {
+              color: $textColorBl;
+            }
+
+            .ant-time-picker-input {
+              height: 100%;
+              border: 1px solid $borderCol;
+
+              &::placeholder {
+                font-size: $commonSz;
+                color: $textColorBl;
+                font-weight: 500;
+              }
+
+              &:hover {
+                border-color: $bgBlue2;
+              }
+            }
+          }
+        }
+      }
+
+      // Lucknow timepicker End
+    }
+  }
+}
+
+// Lucknow All Items End
+
+
+// Lucknow Articles Start
+
+.articles{
+    .lucknow-articles_section{
+        width: 100%;
+
+        .lucknow-articles_wrapper{
+
+            .articles-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .article-right{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 15px;
+                    background: $bgColor;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    svg{
+                        width: 24px;
+                        height: 12px;
+                    }
+                }
+
+                h3{
+                    font-size: $mediumSz;
+                    line-height: $tallLh;
+                    color: $textColorBl;
+                    font-weight: 800;
+                    margin: 0;
+                }
+            }
+
+            .lucknow-articles{
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                .article-items{
+                    display: flex;
+                    column-gap: 10px;
+                    cursor: pointer;
+
+                    .article_details{
+                        flex: 0 0 70%;
+
+                        .detail-items{
+                            margin-top: 4px;
+                            display: flex;
+                            position: relative;
+
+                            .likes{
+                                position: relative;
+                                margin-left: -6px;
+                                background: $bgYellow1;
+                                padding: 2px 4px;
+                                box-sizing: border-box;
+                                border-radius: 15px;
+                                border: 1px solid $bgWhite;
+                                display: flex;
+                                column-gap: 4px;
+                                align-items: center;
+
+                                span{
+                                    font-size: $smSz;
+                                    line-height: $miniLh;
+                                    font-weight: 500;
+                                    color: $textColorBl;
+                                }
+                            }
+
+                            .img{
+                                &:nth-child(2){
+                                    position: relative;
+                                    margin-left: -6px;
+                                }
+                            }
+                        }
+
+                        p{
+                            font-size: $miniSz;
+                            line-height: $commonLh;
+                            color: $textColorBl;
+                            font-weight: 700;
+                            margin: 0;
+                        }
+                    }
+
+                    .article-logo{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .chick-art{
+                        background: $bgYellow;
+                    }
+
+                    .mask-art{
+                        background: $bgBlue;
+                    }
+
+                    .bread-art{
+                        background: $bgPink;
+                    }
+
+                    .pizza-art{
+                        background: $bgBlue1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Lucknow Articles End

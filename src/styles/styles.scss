@@ -1,7 +1,7 @@
 @import "./components/variables.scss";
 @import "./components/responsive.scss";
 @import "./components/home.scss";
-@import './components/menu.scss';
+@import "./components/menu.scss";
 
 @font-face {
   font-family: "Spartan-Extrabold";
@@ -32,19 +32,19 @@ body {
     position: relative;
     overflow: hidden;
 
-    .grapes{
+    .grapes {
       position: absolute;
       top: -142px;
       left: -106px;
     }
 
-    .main_orange{
+    .main_orange {
       position: absolute;
       bottom: -148px;
       right: 56px;
     }
 
-    .barItem{
+    .barItem {
       display: none;
     }
   }
@@ -59,13 +59,13 @@ body {
     flex: 0 1 80%;
     padding-top: 50px;
     padding-left: 60px;
-    padding-right: 55px ;
+    padding-right: 55px;
     box-sizing: border-box;
     background: $bgWhite;
     border-radius: 35px;
   }
 
-  .menu-page{
+  .menu-page {
     flex: 0 1 80%;
     padding: 50px 55px 24px 60px;
     box-sizing: border-box;

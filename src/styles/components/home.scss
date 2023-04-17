@@ -1,8 +1,7 @@
 // Nav Section Start
 .nav-section {
   .navigation-container {
-
-    .close{
+    .close {
       display: none;
     }
 
@@ -371,8 +370,7 @@
 }
 
 .banner-slider {
-
-  .mobile-slider_wrapper{
+  .mobile-slider_wrapper {
     display: none;
   }
 
@@ -701,8 +699,6 @@
   .lucknow-filter {
     margin-top: 20px;
 
-    
-
     .filter_wrapper {
       position: relative;
       height: fit-content;
@@ -722,7 +718,6 @@
       .filter-timepicker {
         flex: 0 0 30%;
       }
-
 
       .filter_offer {
         position: absolute;
@@ -780,8 +775,6 @@
           }
         }
       }
-
-      
 
       // Lucknow dropdown Start
 
@@ -1008,130 +1001,127 @@
 
 // Lucknow All Items End
 
-
 // Lucknow Articles Start
 
-.articles{
-    .lucknow-articles_section{
-        width: 100%;
+.articles {
+  .lucknow-articles_section {
+    width: 100%;
 
-        .lucknow-articles_wrapper{
+    .lucknow-articles_wrapper {
+      .articles-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-            .articles-header{
+        .article-right {
+          width: 50px;
+          height: 50px;
+          border-radius: 15px;
+          background: $bgColor;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          svg {
+            width: 24px;
+            height: 12px;
+          }
+        }
+
+        h3 {
+          font-size: $mediumSz;
+          line-height: $tallLh;
+          color: $textColorBl;
+          font-weight: 800;
+          margin: 0;
+        }
+      }
+
+      .lucknow-articles {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        .article-items {
+          display: flex;
+          column-gap: 10px;
+          cursor: pointer;
+
+          .article_details {
+            flex: 0 0 70%;
+
+            .detail-items {
+              margin-top: 4px;
+              display: flex;
+              position: relative;
+
+              .likes {
+                position: relative;
+                margin-left: -6px;
+                background: $bgYellow1;
+                padding: 2px 4px;
+                box-sizing: border-box;
+                border-radius: 15px;
+                border: 1px solid $bgWhite;
                 display: flex;
-                justify-content: space-between;
+                column-gap: 4px;
                 align-items: center;
 
-                .article-right{
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 15px;
-                    background: $bgColor;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    cursor: pointer;
-
-                    svg{
-                        width: 24px;
-                        height: 12px;
-                    }
+                span {
+                  font-size: $smSz;
+                  line-height: $miniLh;
+                  font-weight: 500;
+                  color: $textColorBl;
                 }
+              }
 
-                h3{
-                    font-size: $mediumSz;
-                    line-height: $tallLh;
-                    color: $textColorBl;
-                    font-weight: 800;
-                    margin: 0;
+              .img {
+                &:nth-child(2) {
+                  position: relative;
+                  margin-left: -6px;
                 }
+              }
             }
 
-            .lucknow-articles{
-                margin-top: 24px;
-                display: flex;
-                flex-direction: column;
-                row-gap: 20px;
-
-                .article-items{
-                    display: flex;
-                    column-gap: 10px;
-                    cursor: pointer;
-
-                    .article_details{
-                        flex: 0 0 70%;
-
-                        .detail-items{
-                            margin-top: 4px;
-                            display: flex;
-                            position: relative;
-
-                            .likes{
-                                position: relative;
-                                margin-left: -6px;
-                                background: $bgYellow1;
-                                padding: 2px 4px;
-                                box-sizing: border-box;
-                                border-radius: 15px;
-                                border: 1px solid $bgWhite;
-                                display: flex;
-                                column-gap: 4px;
-                                align-items: center;
-
-                                span{
-                                    font-size: $smSz;
-                                    line-height: $miniLh;
-                                    font-weight: 500;
-                                    color: $textColorBl;
-                                }
-                            }
-
-                            .img{
-                                &:nth-child(2){
-                                    position: relative;
-                                    margin-left: -6px;
-                                }
-                            }
-                        }
-
-                        p{
-                            font-size: $miniSz;
-                            line-height: $commonLh;
-                            color: $textColorBl;
-                            font-weight: 700;
-                            margin: 0;
-                        }
-                    }
-
-                    .article-logo{
-                        width: 60px;
-                        height: 60px;
-                        border-radius: 15px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-
-                    .chick-art{
-                        background: $bgYellow;
-                    }
-
-                    .mask-art{
-                        background: $bgBlue;
-                    }
-
-                    .bread-art{
-                        background: $bgPink;
-                    }
-
-                    .pizza-art{
-                        background: $bgBlue1;
-                    }
-                }
+            p {
+              font-size: $miniSz;
+              line-height: $commonLh;
+              color: $textColorBl;
+              font-weight: 700;
+              margin: 0;
             }
+          }
+
+          .article-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .chick-art {
+            background: $bgYellow;
+          }
+
+          .mask-art {
+            background: $bgBlue;
+          }
+
+          .bread-art {
+            background: $bgPink;
+          }
+
+          .pizza-art {
+            background: $bgBlue1;
+          }
         }
+      }
     }
+  }
 }
-
 
 // Lucknow Articles End

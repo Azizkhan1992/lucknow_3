@@ -18,16 +18,14 @@
     }
   }
 
-  .navigation-container{
-
-    .navigation-wrapper{
-      a{
+  .navigation-container {
+    .navigation-wrapper {
+      a {
         padding-right: 12px;
       }
     }
-    .navbar_bottom{
-
-      .deliver_man{
+    .navbar_bottom {
+      .deliver_man {
         right: -12px !important;
       }
     }
@@ -101,19 +99,19 @@
 
   .allDishes-container {
     .dishes-wrapper {
-        row-gap: 36px !important;
+      row-gap: 36px !important;
       .allItems {
         flex: 0 0 45% !important;
 
-        &:nth-child(6){
-            transform: translateY(0) !important;
+        &:nth-child(6) {
+          transform: translateY(0) !important;
         }
 
         &:nth-child(4) {
           height: 248px !important;
           transform: translateY(0) !important;
 
-          .item-image_wrapper{
+          .item-image_wrapper {
             top: -52px !important;
           }
 
@@ -144,67 +142,61 @@
     }
   }
 
-  .lucknow-items_wrapper{
+  .lucknow-items_wrapper {
+    .lucknow-filter {
+      .filter_wrapper {
+        .filter_offer {
+          top: 216px !important;
 
-    .lucknow-filter{
-
-        .filter_wrapper{
-
-            .filter_offer{
-                top: 216px !important;
-
-                h2{
-                    font-size: $extraSize !important;
-                }
-            }
-
-            .filter-dropdown{
-                flex: 0 0 100% !important;
-            }
-
-            .filter-datepicker{
-                flex: 0 0 40% !important;
-                height: 48px;
-            }
-
-            .filter-timepicker{
-                flex: 0 0 40% !important;
-            }
+          h2 {
+            font-size: $extraSize !important;
+          }
         }
+
+        .filter-dropdown {
+          flex: 0 0 100% !important;
+        }
+
+        .filter-datepicker {
+          flex: 0 0 40% !important;
+          height: 48px;
+        }
+
+        .filter-timepicker {
+          flex: 0 0 40% !important;
+        }
+      }
     }
   }
 
-  .articles{
-    .lucknow-articles_section{
-      .lucknow-articles_wrapper{
-
-        .articles-header{
-          
-          .article-right{
+  .articles {
+    .lucknow-articles_section {
+      .lucknow-articles_wrapper {
+        .articles-header {
+          .article-right {
             width: 40px !important;
             height: 40px !important;
           }
         }
 
-        .lucknow-articles{
-
-          .article-items{
+        .lucknow-articles {
+          .article-items {
             align-items: center;
 
-            .article-logo{
+            .article-logo {
               width: 45px !important;
               height: 45px !important;
 
-              img{
+              img {
                 width: 24px !important;
                 height: 24px !important;
               }
             }
 
-            .article_details{
+            .article_details {
               flex: 0 0 65% !important;
 
-              p{
+              p {
                 font-size: $smSz !important;
                 line-height: $miniLh !important;
               }
@@ -215,21 +207,21 @@
     }
   }
 
-
   // Menu Page Start
 
-  .menu_page_container{
-
-    .all-menu-container, .menu-starters-container, .menu-salads-container, .menu-specials-container{
-
-      .menu_wrapper, .starters_wrapper, .salads-wrapper, .specials-wrapper{
-
-        .menu-items{
-
-          .menu-content{
-
-            &::after{
-              content: '.................';
+  .menu_page_container {
+    .all-menu-container,
+    .menu-starters-container,
+    .menu-salads-container,
+    .menu-specials-container {
+      .menu_wrapper,
+      .starters_wrapper,
+      .salads-wrapper,
+      .specials-wrapper {
+        .menu-items {
+          .menu-content {
+            &::after {
+              content: ".................";
               right: 42px;
             }
           }
@@ -237,8 +229,6 @@
       }
     }
   }
-
-
 
   // Menu Page End
 }
@@ -257,7 +247,7 @@
       flex: 0 0 70% !important;
     }
 
-    .menu-page{
+    .menu-page {
       padding: 50px 25px 24px 30px !important;
       flex: 0 0 70% !important;
       max-width: 420px;
@@ -303,23 +293,20 @@
     }
   }
 
-  .navigation-container{
-
-    .navigation-wrapper{
-
-      a{
+  .navigation-container {
+    .navigation-wrapper {
+      a {
         padding-right: 12px;
         box-sizing: border-box;
       }
     }
 
-    .navbar_bottom{
-
-      .deliver_man{
+    .navbar_bottom {
+      .deliver_man {
         right: -12px !important;
       }
 
-      .blue-circle{
+      .blue-circle {
         right: 28px !important;
       }
     }
@@ -394,129 +381,127 @@
     }
   }
 
-
-  .allDishes-container{
+  .allDishes-container {
     margin-top: 24px !important;
 
-    .dishes-wrapper{
-        row-gap: 52px !important;
+    .dishes-wrapper {
+      row-gap: 52px !important;
 
-        .allItems{
-            flex: 0 0 48% !important;
+      .allItems {
+        flex: 0 0 48% !important;
 
-            &:nth-child(6){
-                transform: translateY(0) !important;
-            }
-
-            &:nth-child(4), &:nth-child(5), &:nth-child(6){
-                height: 248px !important;
-
-                .item-image_wrapper{
-                    top: -52px !important;
-                }
-
-                .item_details{
-                    padding: 32px 24px 12px 24px !important;
-                    border-radius: 30px !important;
-
-                    h4{
-                        display: block !important;
-                    }
-                    p{
-                        display: block !important;
-                    }
-
-                    .details-title{
-                        display: flex !important;
-                    }
-                }
-            }
-
-            &:nth-child(2){
-                margin-top: 0 !important;
-
-                .item-image_wrapper{
-                    top: -24px !important;
-                }
-
-                .item_details{
-                    padding: 56px 24px 12px 24px !important ;
-                    background: $bgWhite !important;
-                }
-            }
+        &:nth-child(6) {
+          transform: translateY(0) !important;
         }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          height: 248px !important;
+
+          .item-image_wrapper {
+            top: -52px !important;
+          }
+
+          .item_details {
+            padding: 32px 24px 12px 24px !important;
+            border-radius: 30px !important;
+
+            h4 {
+              display: block !important;
+            }
+            p {
+              display: block !important;
+            }
+
+            .details-title {
+              display: flex !important;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 0 !important;
+
+          .item-image_wrapper {
+            top: -24px !important;
+          }
+
+          .item_details {
+            padding: 56px 24px 12px 24px !important ;
+            background: $bgWhite !important;
+          }
+        }
+      }
     }
   }
 
-  .lucknow-items_wrapper{
-    .lucknow-filter{
-        padding: 0 0 64px 0;
-        box-sizing: border-box;
-        .filter_wrapper{
+  .lucknow-items_wrapper {
+    .lucknow-filter {
+      padding: 0 0 64px 0;
+      box-sizing: border-box;
+      .filter_wrapper {
+        .filter_offer {
+          top: 226px !important;
 
-            .filter_offer{
-                top: 226px !important;
-
-                h2{
-                    font-size: $extraSz !important;
-                }
-            }
-            .filter-dropdown{
-                flex: 0 0 100% !important;
-
-                .dropdown-container{
-                    height: 38px !important;
-
-                    .dropdown-visible{
-
-                    }
-                }
-            }
-
-            .filter-datepicker{
-                flex: 0 0 100% !important;
-
-                .datepicker_container{
-                    height: 38px !important;
-
-                    .ant-calendar-picker{
-                        width: 100%;
-                    }
-                }
-            }
-
-            .filter-timepicker{
-                flex: 0 0 100% !important;
-
-                .timepicker_container{
-                    height: 38px !important;
-                }
-            }
+          h2 {
+            font-size: $extraSz !important;
+          }
         }
+        .filter-dropdown {
+          flex: 0 0 100% !important;
+
+          .dropdown-container {
+            height: 38px !important;
+
+            .dropdown-visible {
+            }
+          }
+        }
+
+        .filter-datepicker {
+          flex: 0 0 100% !important;
+
+          .datepicker_container {
+            height: 38px !important;
+
+            .ant-calendar-picker {
+              width: 100%;
+            }
+          }
+        }
+
+        .filter-timepicker {
+          flex: 0 0 100% !important;
+
+          .timepicker_container {
+            height: 38px !important;
+          }
+        }
+      }
     }
   }
 
-
-  .articles{
+  .articles {
     margin-top: 24px;
 
-    .lucknow-articles_section{
+    .lucknow-articles_section {
       padding-bottom: 24px;
       box-sizing: border-box;
     }
   }
 
-
-  .menu_page_container{
-
-    .menu_page_wrapper{
-
-
-      .all-menu-container, .menu-starters-container, .menu-salads-container, .menu-specials-container{
-
-        .menu_wrapper, .starters_wrapper, .salads-wrapper, .specials-wrapper{
-
-          .menu-items{
+  .menu_page_container {
+    .menu_page_wrapper {
+      .all-menu-container,
+      .menu-starters-container,
+      .menu-salads-container,
+      .menu-specials-container {
+        .menu_wrapper,
+        .starters_wrapper,
+        .salads-wrapper,
+        .specials-wrapper {
+          .menu-items {
             flex: 0 0 100% !important;
           }
         }
@@ -525,29 +510,25 @@
   }
 }
 
-
-
 @media screen and (max-width: 760px) {
-  
-  .main-page_layout{
-
-    .main_page_wrapper{
+  .main-page_layout {
+    .main_page_wrapper {
       position: relative;
       padding: 35px !important;
 
-      .grapes{
+      .grapes {
         width: 200px;
         top: -70px !important;
         left: -80px !important;
       }
 
-      .main_orange{
+      .main_orange {
         width: 152px;
         bottom: -88px !important;
         right: 18px !important;
       }
 
-      .barItem{
+      .barItem {
         position: fixed;
         width: 20px;
         height: 20px;
@@ -557,7 +538,7 @@
         cursor: pointer;
       }
 
-      .nav_container{
+      .nav_container {
         position: fixed;
         flex: 1 0 100%;
         width: 100%;
@@ -571,33 +552,29 @@
         overflow: hidden;
         max-height: 482px;
 
-
-        &.deactive{
+        &.deactive {
           transform: scaleX(0);
-          
 
-          .nav-section{
-
-            .navigation-container{
+          .nav-section {
+            .navigation-container {
               width: 0;
               overflow: hidden;
             }
           }
         }
 
-        &.active{
+        &.active {
           transform: scaleX(1);
 
-          .nav-section{
-
-            .navigation-container{
+          .nav-section {
+            .navigation-container {
               width: 190px;
               position: relative;
               background: $bgWhite;
               border-top-right-radius: 30px;
               border-bottom-right-radius: 30px;
 
-              .close{
+              .close {
                 display: block;
                 width: 20px;
                 height: 20px;
@@ -607,39 +584,39 @@
                 cursor: pointer;
               }
 
-              .nav-logo{
+              .nav-logo {
                 padding-top: 12px;
                 box-sizing: border-box;
                 row-gap: 6px;
 
-                .logo-img_wrapper{
+                .logo-img_wrapper {
                   padding: 4px;
                   border-radius: 8px;
                   background: $bgPurple2;
 
-                  img{
+                  img {
                     width: 24px;
                     height: 24px;
                   }
                 }
               }
 
-              .navigation-wrapper{
+              .navigation-wrapper {
                 margin-top: 24px;
                 padding: 0 12px;
                 box-sizing: border-box;
                 row-gap: 8px;
 
-                a{
+                a {
                   border-radius: 6px;
                   column-gap: 6px;
 
-                  .menu-img_wrapper{
+                  .menu-img_wrapper {
                     width: 20px;
                     height: 20px;
                     border-radius: 6px;
 
-                    svg{
+                    svg {
                       width: 10px;
                       height: 10px;
                     }
@@ -647,39 +624,39 @@
                 }
               }
 
-              .navbar_bottom{
+              .navbar_bottom {
                 padding: 0 12px 12px 12px;
                 box-sizing: border-box;
 
-                .mini-circle{
+                .mini-circle {
                   background: $bgYellow;
                 }
 
-                .middle-circle{
+                .middle-circle {
                   background: $bgBlue2;
                 }
 
-                .deliver_man{
+                .deliver_man {
                   width: 138px;
                   bottom: 96px;
                   right: 32px;
                 }
 
-                .navbar_bottom_details{
+                .navbar_bottom_details {
                   background: $bgPurple2;
                   height: 142px;
 
-                  h4{
+                  h4 {
                     color: $bgWhite;
                   }
 
-                  .detail_items{
+                  .detail_items {
                     color: $bgWhite;
 
-                    .red-circle{
+                    .red-circle {
                       top: 36px;
                     }
-                    p{
+                    p {
                       color: $bgWhite;
                     }
                   }
@@ -690,44 +667,41 @@
         }
       }
 
-      .home_section{
+      .home_section {
         flex: 0 0 100% !important;
         padding: 25px 25px 0 30px !important;
 
-        .home-container{
-
-          .header{
-            .header_wrapper{
-
-              .header_right{
+        .home-container {
+          .header {
+            .header_wrapper {
+              .header_right {
                 flex: 0 0 100% !important;
               }
 
-              .header_left{
+              .header_left {
                 flex: 0 0 100% !important;
                 align-items: center;
                 flex-wrap: wrap;
                 row-gap: 24px;
 
-                .header_search{
+                .header_search {
                   flex: 0 0 100% !important;
 
-                  input{
+                  input {
                     max-width: 130px;
                   }
                 }
 
-                .header_title{
+                .header_title {
                   flex: 0 0 100% !important;
 
-                  .header_title_details{
-
-                    h2{
+                  .header_title_details {
+                    h2 {
                       font-size: $mediumSz !important;
                       line-height: $tallLh !important;
                     }
 
-                    img{
+                    img {
                       width: 32px !important;
                       right: 16px !important;
                       bottom: 0 !important;
@@ -738,23 +712,19 @@
             }
           }
 
-          .banner-section{
-
-            .banner-container{
-
-              .banner-slider{
-
-                .slider_wrapper{
+          .banner-section {
+            .banner-container {
+              .banner-slider {
+                .slider_wrapper {
                   display: none;
                 }
 
-                .mobile-slider_wrapper{
+                .mobile-slider_wrapper {
                   display: block;
                   max-width: 180px;
 
-                  .swiper-container{
-
-                    .swiper-slide{
+                  .swiper-container {
+                    .swiper-slide {
                       height: 130px;
                       border-radius: 60px;
                       background: $bgGrey2;
@@ -766,7 +736,7 @@
                       cursor: pointer;
                       z-index: 49;
 
-                      img{
+                      img {
                         height: calc(50% - 12px);
                       }
                     }
@@ -774,45 +744,45 @@
                 }
               }
 
-              .advertising{
+              .advertising {
                 flex: 0 0 100% !important;
-                .banner-advertising{
+                .banner-advertising {
                   padding: 24px 12px !important;
                 }
 
-                .advertising-wrapper{
-                  .fire-circle{
+                .advertising-wrapper {
+                  .fire-circle {
                     top: -64px;
                     right: 64px;
                   }
 
-                  .apple{
+                  .apple {
                     top: -64px;
                   }
 
-                  .orange{
+                  .orange {
                     top: -24px;
                     right: 24px;
                   }
 
-                  .cheese{
+                  .cheese {
                     right: -28px;
                     bottom: 0;
                   }
 
-                  .advertising_details{
-                    h3{
+                  .advertising_details {
+                    h3 {
                       font-size: $commonSz;
                       line-height: $mediumLh;
                     }
 
-                    p{
+                    p {
                       max-width: 55%;
                       font-size: $miniSz;
                     }
                   }
 
-                  .burger{
+                  .burger {
                     width: 160px;
                     top: -116px !important;
                     right: -40%;
@@ -822,52 +792,51 @@
             }
           }
 
-          .allItems-articles_section{
-
-            .allItems-container{
-
-              .items{
+          .allItems-articles_section {
+            .allItems-container {
+              .items {
                 flex: 0 0 100%;
 
-                .lucknow-dishes_section{
-
-                  .lucknow-items_wrapper{
-
-                    .allDishes-container{
+                .lucknow-dishes_section {
+                  .lucknow-items_wrapper {
+                    .allDishes-container {
                       margin-top: 36px;
 
-                      .dishes-wrapper{
+                      .dishes-wrapper {
                         row-gap: 68px;
 
-                        .allItems{
+                        .allItems {
                           flex: 0 0 100%;
 
-                          &:nth-child(2){
-                            .item-image_wrapper{
+                          &:nth-child(2) {
+                            .item-image_wrapper {
                               top: -24px;
                             }
 
-                            .item_details{
+                            .item_details {
                               padding: 56px 24px 12px 24px;
                               background: $bgWhite;
                             }
                           }
 
-                          &:nth-child(4), &:nth-child(5), &:nth-child(6){
+                          &:nth-child(4),
+                          &:nth-child(5),
+                          &:nth-child(6) {
                             transform: translateY(0);
 
-                            .item-image_wrapper{
+                            .item-image_wrapper {
                               top: -78px;
                             }
-                            
-                            .item_details{
+
+                            .item_details {
                               border-radius: 30px;
 
-                              h4, p{
+                              h4,
+                              p {
                                 display: block;
                               }
 
-                              .details-title{
+                              .details-title {
                                 display: flex;
                               }
                             }
@@ -876,50 +845,48 @@
                       }
                     }
 
-                    .lucknow-filter{
+                    .lucknow-filter {
                       padding-bottom: 64px;
                       box-sizing: border-box;
 
-                      .filter_wrapper{
-                        .filter-dropdown{
+                      .filter_wrapper {
+                        .filter-dropdown {
                           flex: 0 0 100%;
 
-                          .dropdown-container{
+                          .dropdown-container {
                             height: 36px;
                           }
                         }
 
-                        .filter-datepicker{
+                        .filter-datepicker {
                           flex: 0 0 100%;
                           height: 36px;
 
-                          .datepicker_container{
-
-                            .ant-calendar-picker-container{
+                          .datepicker_container {
+                            .ant-calendar-picker-container {
                               max-width: 190px;
 
-                              .ant-calendar{
+                              .ant-calendar {
                                 width: 100%;
                               }
                             }
                           }
                         }
 
-                        .filter-timepicker{
+                        .filter-timepicker {
                           flex: 0 0 100%;
                           height: 36px;
                         }
 
-                        .filter_offer{
+                        .filter_offer {
                           top: 210px;
                           left: calc(55% - 12px);
 
-                          .offer-container{
-
-                            h2{
+                          .offer-container {
+                            h2 {
                               font-size: $largeSz;
 
-                              &:nth-child(1){
+                              &:nth-child(1) {
                                 -webkit-text-stroke: 2px $bgPurple2;
                               }
                             }
@@ -931,34 +898,31 @@
                 }
               }
 
-
-              .articles{
+              .articles {
                 flex: 0 0 100%;
 
-                .lucknow-articles_section{
+                .lucknow-articles_section {
                   margin-top: 24px;
 
-                  .lucknow-articles_wrapper{
+                  .lucknow-articles_wrapper {
                     padding-bottom: 24px;
                     box-sizing: border-box;
                   }
 
-                  .lucknow-articles{
-
-                    .article-items{
-
-                      .article_details{
-                        p{
+                  .lucknow-articles {
+                    .article-items {
+                      .article_details {
+                        p {
                           font-size: $smSz;
                           line-height: $miniLh;
                         }
                       }
 
-                      .article-logo{
+                      .article-logo {
                         width: 50px;
                         height: 50px;
 
-                        img{
+                        img {
                           width: 28px;
                         }
                       }
@@ -973,56 +937,53 @@
     }
   }
 
-
   // Menu Page Start
 
-  .menu-page{
+  .menu-page {
     flex: 0 0 100% !important;
     padding: 25px 25px 16px 30px !important;
 
-    .menu_page_section{
-
-      .menu_page_container{
-
-        .menu_page_header{
-          h2{
+    .menu_page_section {
+      .menu_page_container {
+        .menu_page_header {
+          h2 {
             font-size: $mediumSz !important;
             line-height: $tallLh !important;
           }
         }
 
-        .menu_page_wrapper{
-
-          .items-header{
+        .menu_page_wrapper {
+          .items-header {
             row-gap: 16px !important;
           }
 
-          .type-items-wrapper{
-
-            .menu-specials-container, .all-menu-container, .menu-starters-container, .menu-salads-container{
-
-              .specials-wrapper, .menu_wrapper, .starters_wrapper, .salads-wrapper{
-
-                .menu-items{
+          .type-items-wrapper {
+            .menu-specials-container,
+            .all-menu-container,
+            .menu-starters-container,
+            .menu-salads-container {
+              .specials-wrapper,
+              .menu_wrapper,
+              .starters_wrapper,
+              .salads-wrapper {
+                .menu-items {
                   flex: 0 0 100% !important;
 
-                  .menu-content{
-
-                    &::after{
+                  .menu-content {
+                    &::after {
                       content: ".........";
                       right: 48px;
                     }
 
-                    h4{
+                    h4 {
                       max-width: 55%;
                       font-size: $smalSz;
                       margin: 0;
                     }
                   }
 
-                  .menu-details{
-
-                    p{
+                  .menu-details {
+                    p {
                       font-size: $miniSz;
                       max-width: 95%;
                     }
@@ -1035,8 +996,6 @@
       }
     }
   }
-  
-
 
   // Menu Page End
 }
